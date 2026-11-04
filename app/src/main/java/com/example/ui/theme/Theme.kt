@@ -12,30 +12,30 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = PrimaryDarkTheme,
+    primary = BrandTealLight,
     onPrimary = Color.Black,
-    primaryContainer = PrimaryDarkTeal,
+    primaryContainer = BrandNavyDark,
     onPrimaryContainer = Color.White,
-    secondary = AccentGold,
+    secondary = BrandTeal,
     onSecondary = Color.Black,
-    tertiary = AccentAmber,
+    tertiary = BrandCyan,
     background = BackgroundDark,
     surface = SurfaceDark,
-    surfaceVariant = Color(0xFF132B36),
+    surfaceVariant = Color(0xFF102638),
     onBackground = Color(0xFFF1F5F9),
     onSurface = Color(0xFFF1F5F9)
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = PrimaryTeal,
+    primary = BrandNavy,
     onPrimary = Color.White,
     primaryContainer = Color(0xFFE0F2FE),
-    onPrimaryContainer = PrimaryDarkTeal,
-    secondary = AccentGold,
+    onPrimaryContainer = BrandNavyDark,
+    secondary = BrandTeal,
     onSecondary = Color.White,
-    secondaryContainer = AccentGoldLight,
-    onSecondaryContainer = Color(0xFF5D4037),
-    tertiary = AccentAmber,
+    secondaryContainer = Color(0xFFCCFBF1),
+    onSecondaryContainer = BrandTealDark,
+    tertiary = BrandCyan,
     background = NeutralLight,
     surface = SurfaceLight,
     surfaceVariant = SurfaceVariantLight,
@@ -47,7 +47,7 @@ private val LightColorScheme = lightColorScheme(
 @Composable
 fun SakanShareTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    dynamicColor: Boolean = false, // Use our brand hotel colors for a distinctive branded experience
+    dynamicColor: Boolean = false, // Keep brand navy/teal consistent across all devices
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {

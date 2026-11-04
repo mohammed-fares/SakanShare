@@ -1,7 +1,10 @@
 package com.example.ui.screens
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
+import androidx.compose.ui.res.painterResource
+import com.example.R
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -207,18 +210,30 @@ fun HomeScreen(
                         horizontalArrangement = Arrangement.SpaceBetween,
                         verticalAlignment = Alignment.CenterVertically
                     ) {
-                        Column {
-                            Text(
-                                text = "مزايا سكن شير الفندقية الموحدة",
-                                color = Color.White,
-                                fontWeight = FontWeight.Bold,
-                                fontSize = 15.sp
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Image(
+                                painter = painterResource(id = R.drawable.sakanshare_brand_icon),
+                                contentDescription = null,
+                                modifier = Modifier
+                                    .size(38.dp)
+                                    .clip(RoundedCornerShape(8.dp))
+                                    .background(Color.White)
+                                    .padding(2.dp)
                             )
-                            Text(
-                                text = "راحة، أمان رقمي، وتقسيم عادل للمصاريف",
-                                color = Color(0xFF90A4AE),
-                                fontSize = 11.sp
-                            )
+                            Spacer(modifier = Modifier.width(10.dp))
+                            Column {
+                                Text(
+                                    text = "مزايا سكن شير الفندقية الموحدة",
+                                    color = Color.White,
+                                    fontWeight = FontWeight.Bold,
+                                    fontSize = 15.sp
+                                )
+                                Text(
+                                    text = "راحة، أمان رقمي، وتقسيم عادل للمصاريف",
+                                    color = Color(0xFF90A4AE),
+                                    fontSize = 11.sp
+                                )
+                            }
                         }
                         Surface(
                             shape = RoundedCornerShape(8.dp),
