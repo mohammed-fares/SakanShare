@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SakanShare</string>
+    <string name="app_tagline">تأجير العقارات بنظام المشاركة السكنية الفندقية</string>
+    <string name="search_placeholder">ابحث بالجامعة، المترو، أو المنطقة...</string>
+    <string name="nav_home">الرئيسية</string>
+    <string name="nav_explore">استكشف</string>
+    <string name="nav_bookings">حجوزاتي</string>
+    <string name="nav_services">الخدمات</string>
+    <string name="nav_profile">حسابي</string>
+    <string name="currency_egp">ج.م</string>
+    <string name="per_month">/ شهر</string>
+    <string name="per_day">/ يوم</string>
+    <string name="book_now">احجز الآن</string>
+    <string name="confirm_booking">تأكيد الحجز والدفع</string>
+</resources>

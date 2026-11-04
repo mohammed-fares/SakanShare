@@ -1,0 +1,6 @@
+{
+  "name": "SakanShare",
+  "description": "تطبيق تأجير العقارات بنظام المشاركة السكنية الفندقية (Co-living & Bed-Sharing)",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
